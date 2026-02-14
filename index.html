@@ -2,79 +2,113 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>RoomEase Dashboard</title>
+<title>RoomEase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+
+<div class="hero">
+
+  <div class="hero-text">
+    <h1>📚 RoomEase</h1>
+    <p>Smart Classroom Availability System</p>
+
+    <a href="student.html" class="btn">Check Classrooms</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+  </div>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Panel</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="dashboard">
+<div class="panel">
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <h2>🏫 RoomEase</h2>
-    <ul>
-      <li class="active">Dashboard</li>
-      <li>Schedule</li>
-      <li>Available Rooms</li>
-      <li onclick="adminLogin()">Admin Panel</li>
-    </ul>
-  </aside>
+  <h1>🎓 Classroom Finder</h1>
+  <p>Search rooms between 100 – 200</p>
 
-  <!-- Main Content -->
-  <main class="content">
+  <div class="search-box">
+    <input type="number" id="roomInput" placeholder="Enter room number">
+    <button onclick="checkRoom()">Search</button>
+  </div>
 
-    <header class="topbar">
-      <h1>Classroom Availability</h1>
-      <input type="text" id="roomInput" placeholder="Search room (e.g. 102)">
-      <button onclick="searchRoom()">Search</button>
-    </header>
+  <div id="result" class="result-box"></div>
 
-    <div id="result" class="result"></div>
+  <a href="index.html" class="back">← Back Home</a>
 
-    <h2>Today's Schedule</h2>
-
-    <div class="schedule">
-
-      <div class="card">
-        <div>
-          <h3>Room 102</h3>
-          <p>Mathematics</p>
-          <small>Ms. Anitha • 9:00 AM</small>
-        </div>
-        <span class="occupied">Occupied</span>
-      </div>
-
-      <div class="card">
-        <div>
-          <h3>Room 104</h3>
-          <p>Physics</p>
-          <small>Mr. Rahul • 10:30 AM</small>
-        </div>
-        <span class="occupied">Occupied</span>
-      </div>
-
-      <div class="card">
-        <div>
-          <h3>Room 201</h3>
-          <p>Chemistry</p>
-          <small>Mrs. Devi • 12:00 PM</small>
-        </div>
-        <span class="occupied">Occupied</span>
-      </div>
-
-      <div class="card free-card">
-        <div>
-          <h3>Room 103</h3>
-          <p>No class scheduled</p>
-        </div>
-        <span class="free">Free</span>
-      </div>
-
-    </div>
-
-  </main>
 </div>
 
 <script src="script.js"></script>
+</body>
+</html>
+<a href="student.html" class="btn">Check Classrooms</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Classroom Directory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="panel">
+
+  <h1>🏫 Classroom Directory</h1>
+  <p>Find where classrooms are located</p>
+
+  <div class="search-box">
+    <input type="number" id="roomInput" placeholder="Enter room number">
+    <button onclick="findRoom()">Search</button>
+  </div>
+
+  <div id="result" class="result-box"></div>
+
+  <div class="directory" id="directory"></div>
+
+  <a href="index.html" class="back">← Back Home</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RoomEase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+
+<div class="hero">
+
+  <div class="hero-text">
+    <h1>📚 RoomEase</h1>
+    <p>Smart Classroom Availability System</p>
+
+    <!-- SIMPLE LINK -->
+    <a href="classrooms.html" class="btn">Check Classrooms</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+  </div>
+
+</div>
+
 </body>
 </html>
